@@ -1,0 +1,26 @@
+<!-- 2.Create and Append a New List Item:
+Add a new <li> element with the text "New Item" to an existing <ul> with ID "list". -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <ul>
+        <li>Old Item</li>
+      </ul>
+    </div>
+
+    <script>
+      let newList = document.createElement("li");
+      newList.id = "list";
+      newList.textContent = "New Item";
+
+      document.querySelector("ul").appendChild(newList);
+    </script>
+  </body>
+</html>

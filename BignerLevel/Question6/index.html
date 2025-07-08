@@ -1,0 +1,24 @@
+<!-- 6.Create a <ul> with 5 <li> items and append it to a <div> with ID container. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question6</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const newUl = document.createElement("ul");
+      for (i = 1; i <= 5; i++) {
+        const newLi = document.createElement("li");
+        newLi.textContent = `Line ${i}`;
+        newUl.appendChild(newLi);
+      }
+
+      document.getElementById("container").appendChild(newUl);
+    </script>
+  </body>
+</html>

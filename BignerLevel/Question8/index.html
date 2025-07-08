@@ -1,0 +1,30 @@
+<!-- 8.Toggle a class highlight on a <div> when it's clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 8</title>
+  </head>
+  <style>
+    .highlight {
+      background-color: aqua;
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <div id="root">
+      <p>Clik Button To Highlight The Text</p>
+      <button onclick="HighlightText()">Click</button>
+    </div>
+
+    <script>
+      const para = document.querySelector("p");
+
+      function HighlightText() {
+        para.classList.toggle("highlight");
+      }
+    </script>
+  </body>
+</html>

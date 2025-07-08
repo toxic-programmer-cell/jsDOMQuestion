@@ -1,0 +1,64 @@
+<!-- 4.Add a class active to an element with class menu-item. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 4</title>
+  </head>
+  <style>
+    .active {
+      background-color: rgb(8, 238, 58);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .menu-item {
+      background-color: red;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    #root {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 10px;
+    }
+  </style>
+  <body>
+    <div id="root">
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+    </div>
+
+    <script>
+      let active = document.querySelectorAll(".menu-item");
+      //   active.forEach((item) => {
+      //     item.addEventListener("mouseover", () => {
+      //       item.classList.remove("menu-item");
+      //       item.classList.add("active");
+      //     });
+      //     item.addEventListener("mouseout", () => {
+      //       item.classList.remove("active");
+      //       item.classList.add("menu-item");
+      //     });
+      //   });
+
+      function toggleActive(e) {
+        e.target.classList.toggle("menu-item");
+        e.target.classList.toggle("active");
+      }
+
+      active.forEach((item) => {
+        item.addEventListener("mouseover", toggleActive);
+        item.addEventListener("mouseout", toggleActive);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manupalition</title>
+  </head>
+  <body>
+    <!--# Change Text on Button Click : 
+    Write a function that changes the text inside a <p> tag to "Hello, DOM!" when a button is clicked. -->
+    <div id="root">
+      <p>Hellow From HTML</p>
+      <button onclick="changeText()">Change</button>
+    </div>
+
+    <script>
+      function changeText() {
+        document.querySelector("p").textContent = "Hello, DOM!";
+      }
+    </script>
+  </body>
+</html>
