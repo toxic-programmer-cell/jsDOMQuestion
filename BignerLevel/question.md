@@ -14,7 +14,7 @@ Add a new <li> element with the text "New Item" to an existing <ul> with ID "lis
 
 7.Get the value from an <input> element with ID username when a button is clicked.✅
 
-8.Toggle a class highlight on a <div> when it's clicked.
+8.Toggle a class highlight on a <div> when it's clicked.✅
 
 9.Set the src attribute of an <img> tag to a new URL.
 
